@@ -13,5 +13,7 @@ create table order_reward_act_new
     amount_type        int                                not null,
     is_deleted         tinyint  default 0                 not null,
     created_at         datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    created_by         varchar(255)                       not null,
+    update_by          varchar(255)                       not null,
     updated_at         datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP
 );
