@@ -17,3 +17,6 @@ create table order_reward_act_new
     update_by          varchar(255)                       not null,
     updated_at         datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP
 );
+
+alter table sale_second_scene_order_record
+    add local_belong_time datetime null comment '订单归属时间';
