@@ -5,10 +5,7 @@ aka aka
 
 ```java
 @PostMapping("/resetOrderStaffBelong")
-    public Response resetOrderStaffBelong(@RequestBody List<String> subOrders) {
-        if (CollectionUtils.isNotEmpty(subOrders)) {
-            saleSecondSceneOrderRecordService.resetOrderStaffBelong(subOrders);
-        }
+    public Response resetOrderStaffBelong() {
         return Response.ok();
     }
 ```
